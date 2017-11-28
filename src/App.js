@@ -12,6 +12,7 @@ import MessageWLabels from './components/MessageWLabels';
 import ToolbarAMS from './components/ToolbarAMS';
 import ToolbarSMS from './components/ToolbarSMS';
 import ToolbarWCB from './components/ToolbarWCB';
+import {msgData} from "./msgData"
 
 class App extends Component {
   render() {
