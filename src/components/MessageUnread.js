@@ -1,4 +1,10 @@
-<div class="row message read">
+import React from 'react';
+
+class MessageUnread extends React.Component {
+  render() {
+    return (
+      <div>
+<div class="row message unread">
 <div class="col-xs-1">
   <div class="row">
     <div class="col-xs-2">
@@ -10,8 +16,14 @@
   </div>
 </div>
 <div class="col-xs-11">
-  <a href="#">
+  <a href="http://www.gmail.com">
     Here is some message text that has a bunch of stuff
   </a>
 </div>
 </div>
+</div>
+    )
+  }
+}
+
+export default MessageUnread

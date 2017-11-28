@@ -1,21 +1,39 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import logo from './email.ico';
 import './App.css';
+import ComposeMessage from './components/ComposeMessage';
+import MessageExpanded from './components/MessageExpanded';
+import MessageRead from './components/MessageRead';
+import MessageSelected from './components/MessageSelected';
+import MessageStarred from './components/MessageStarred';
+import MessageUnread from './components/MessageUnread';
+import MessageWLabels from './components/MessageWLabels';
+import ToolbarAMS from './components/ToolbarAMS';
+import ToolbarSMS from './components/ToolbarSMS';
+import ToolbarWCB from './components/ToolbarWCB';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+      <logo />
+      <ToolbarWCB />
+      <ComposeMessage />
+      <MessageExpanded />
+      <MessageRead />
+      <MessageSelected />
+      <MessageStarred />
+      <MessageUnread />
+      <MessageWLabels />
+      
+
       </div>
     );
   }
 }
 
 export default App;
+
+ReactDOM.render(
+  <App/>, document.getElementById('root'));
